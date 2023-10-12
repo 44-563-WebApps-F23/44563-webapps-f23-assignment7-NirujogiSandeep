@@ -35,12 +35,12 @@
   {
     reactTime = undefined;
     endTime = Date.now();
-    let randomCountDown = Math.round(Math.random() * (10 - 2) + 2)
-    for(let i=0;i<randomCountDown;i++)
+    let randDown = Math.round(Math.random() * (10 - 2) + 2)
+    for(let i=0;i<randCountDown;i++)
     {
         setTimeout( function () {
             document.getElementById('counter').innerHTML = `Count: ${i}`
-        } , (randomCountDown-i)*1000)
+        } , (randCountDown-i)*1000)
     }
     setTimeout( function () {document.getElementById('counter').innerHTML = `Count: ${i}`} , 8000)
     setTimeout(function()
