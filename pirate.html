@@ -161,13 +161,13 @@
   }
   function help()
   {
-    let col = lastCheck%5
+    let column = lastCheck%5
     let row = Math.floor(lastCheck/5)
 
     let treasureColumn = treasureLocation%5
     let treasureRow = Math.floor(treasureLocation/5)
 
-    let col_diff = Math.abs(col-treasureColumn) 
+    let col_diff = Math.abs(column-treasureColumn) 
     let row_diff = Math.abs(row-treasureRow)
 
     let report = ""
